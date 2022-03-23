@@ -29,10 +29,10 @@ h1,h2,h3{
     background-color: white;
     grid-template-areas: 
     "item2 item2 item3 item3"
+    "item5 item5 item5 item5"
     "item1 item1 item1 item1"
     "itemy itemy itemy itemy"
     "item4 item4 item4 item4"
-    "item5 item5 item5 item5"
     "item6 item6 item6 item6"
     "item7 item7 item7 item7"
     "item8 item8 item8 item8"
@@ -45,18 +45,14 @@ h1,h2,h3{
     "item15 item15 item15 item15";
     
 }
-.grid-container div{
-  
-}
+
 
 .item1{
     text-align: center;
     grid-area:item1;
     height: 80px; 
 }
-.item1 img{
-    text-align: center;
-}
+
 .itemy{
     text-align: center;
     grid-area: itemy;
@@ -83,11 +79,11 @@ h1,h2,h3{
 }
 .item4{
     grid-area:item4;
-    text-align: left;
+    text-align: center;
     padding: 7px;
     height: 60px;
 }
-.boton{
+.boton1{
     border-radius: 30px;
     padding: 10px;
     background-color: var(--blue-color);
@@ -96,27 +92,36 @@ h1,h2,h3{
     box-shadow: 2px 2px 2px var(--dark-color);
 
 }
+.boton2{
+    border-radius: 30px;
+    padding: 10px;
+    background-color: var(--blue-color);
+    border-style: none;
+    color: var(--gray-color);
+    visibility: hidden;
+    box-shadow: 2px 2px 2px var(--dark-color);
+
+}
 .item5 {
     grid-area:item5;
+    text-align: center;
     
 }
 .item5 img{
-    max-width: 768px;
+    max-width: 390px;
     height: 100%;
 }
 .item6 {
-    text-align: center;
     grid-area:item6;
-    height: 400px;
+    height: 240px;
 }
 .item6 img{
-    max-width: 768px;
     width: 100%;
     height: 100%;
 }
 .bannerletras{
     position:absolute;
-    width: 400px;
+    width: 250px;
     left: 100px;
     bottom: 30px;
 }
@@ -128,10 +133,8 @@ h1,h2,h3{
 }
 .item7{
     grid-area:item7;
-    
 }
 .item7 img{
-    max-width: 768px;
     width: 100%;
     height: 100%;
 }
@@ -139,7 +142,6 @@ h1,h2,h3{
     background-image: url(../img/4.\ covid.jpeg);
     text-align: center;
     grid-area:item8;
-    height: 400px;
     padding: 30px;
 }
 .item8 h3{
@@ -181,7 +183,6 @@ h1,h2,h3{
 }
 .item9 img{
     justify-content: center;
-    margin: 0 200px;
     width: 200px;
 }
 .item10{
@@ -228,9 +229,9 @@ h1,h2,h3{
         display: grid;
         background-color: white;
         grid-template-areas: 
-        "item2 itemy2 item3 item3 item4"
-        "item1 item1 item1 itemy itemy"
+        "item2 item2 item3 item3 item4"
         "item5 item5 item5 item5 item5"
+        "item1 item1 item1 itemy itemy"
         "item6 item6 item6 item6 item6"
         "item7 item7 item7 item7 item7"
         "item8 item8 item8 item8 item8"
@@ -249,35 +250,77 @@ h1,h2,h3{
     .itemy{
         text-align: left;
     }
-    .item5 img{
-        max-width: 1024px;
-        height: 100%;
-    }
-    .item6 img{
-        max-width: 1024px;
-    width: 100%;
+    .item6{
+        height: 300px;
     }
     .bannerletras{
-        bottom: 180px;
+        text-align: center;
+        width: 400px;
+        bottom: 200px;
     }
-    .item7 img{
-        max-width: 1024px;
-    width: 100%;
+    .boton2{
+        border-radius: 30px;
+        padding: 10px;
+        background-color: var(--blue-color);
+        border-style: none;
+        color: var(--gray-color);
+        box-shadow: 2px 2px 2px var(--dark-color);
+        visibility: visible;
     }
-    .item8{
-        height: 100%;
-    }
-    .foot{
-        max-width: 1024px;
-        width: 100%;
-    }
+    
 }
 @media screen and  (min-width:1024px){
     .grid-container{
         display: grid;
         background-color: white;
         grid-template-areas: 
-        "span span item2 item3 item4"
+        "span item2 item2 item3 item4"
+        "item1 itemy item5 item5 item5"
+        "item6 item6 item6 item6 item6"
+        "item7 item7 item7 item7 item7"
+        "item8 item8 item8 item9 item9"
+        "item10 item10 item10 item10 item10" 
+        "item11 item11 item11 item11 item11"
+        "item12 item12 item12 item12 item12"
+        "item13 item13 item13 item13 item13"
+        "item14 item14 item14 item14 item14"
+        "item15 item15 item15 item15 item15";
+    }
+    .item1 img{
+        padding-bottom: 20px;
+    }
+    .itemy img{
+        max-width: 900px;
+        height: 50px;
+    }
+    .item6{
+        height: 400px;
+    }
+    .bannerletras{
+        text-align: center;
+        width: 550px;
+        bottom: 180px;
+        left: 250px;
+    }
+    .item4{
+        padding-top: 25px;
+    }
+    
+    .item5 img{
+        max-width: 600px;
+        height: 40px;
+    }
+    .item9 p{
+        width: 400px;
+    }
+}
+    
+@media screen and  (min-width:1200px){
+    .grid-container{
+        display: grid;
+        background-color: white;
+        grid-template-areas: 
+        "span item2 item2 item3 item4"
         "item1 itemy item5 item5 item5"
         "item6 item6 item6 item6 item6"
         "item7 item7 item7 item7 item7"
@@ -300,28 +343,11 @@ h1,h2,h3{
         padding-top: 25px;
     }
     .item5 img{
+        max-width: 900px;
         height: 40px;
-    }
-    .item6 img{
-        max-width: 1500px;
-        width: 100%;
-    }
-    .item7 img{
-        max-width: 1500px;
-        width: 100%;
-    }
-    .foot{
-        max-width: 1500px;
-        width: 100%;
-    }
-    .item8{
-        width: 100%;
-    }
-    .item9{
-        width: 100%;
     }
     .item9 p{
         width: 600px;
     }
+
 }
-    
