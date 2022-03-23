@@ -145,7 +145,7 @@ h1,h2,h3{
     padding: 30px;
 }
 .item8 h3{
-    text-align: justify;
+    text-align: left;
     color: var(--blue-dark-color);
 }
 .item8 ul{
@@ -188,32 +188,32 @@ h1,h2,h3{
 .item10{
     
     grid-area:item10;
-    height: 40px;
-    
+    height: 50px;
 }
 .foot{
     background-color: var(--blue-dark-color);
     border-bottom: 5px solid var(--gray-color);
     color: var(--white-color);
+    cursor: pointer;
     text-align: left;
     width: 100%;
     height: 100%;
 }
 .item11{
     grid-area:item11;
-    height: 40px;
+    height: 50px;
 }
 .item12{
     grid-area:item12;
-    height: 40px;
+    height: 50px;
 }
 .item13{
     grid-area:item13;
-    height: 40px;
+    height: 50px;
 }
 .item14{
     grid-area:item14;
-    height: 40px;
+    height: 50px;
 }
 .item15{
     color: var(--white-color);
