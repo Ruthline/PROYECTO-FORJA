@@ -470,15 +470,20 @@ h1,h2,h3{
 .bb{
     padding: 20px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 .add{
-    padding: 5px;
+    cursor: pointer;
+    padding: 6px 10px;
     border-radius: 8px;
     color: white;
     background-color: var(--orange-color);
     border: 1px solid var(--orange-color);
 
+}
+.add i{
+    padding-left: 5px;
 }
 .btnd1{
     cursor: pointer;
