@@ -152,7 +152,6 @@ h1,h2,h3{
     background-size: cover;
 }
 .item8{
-    margin: 20px 30px;
     padding: 10px;
     text-align: center;
     width: 80%;
@@ -162,7 +161,7 @@ h1,h2,h3{
     color: var(--blue-dark-color);
 }
 .item8 ul{
-    text-align: justify;
+    text-align: left;
     padding-left:50px;
     list-style: none;
     line-height:50px;
@@ -179,7 +178,6 @@ h1,h2,h3{
 }
 .item9{
     padding: 10px;
-    margin: 20px 30px;
     text-align: center;
 }
 .item9 i{
@@ -452,11 +450,12 @@ h1,h2,h3{
 /*Aqui va pacientes*/
 .headerpacientes{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
     background-color: var(--dark-color);
-    height: 150px;
+    height: 200px;
 }
 .arriba{
     display: flex;
@@ -720,7 +719,10 @@ table {
         box-shadow: 2px 2px 2px var(--dark-color);
         visibility: visible;
     }
-    
+    .headerpacientes{
+        flex-direction: row;
+        height: 150px;
+    }
     .guerrerosd{
         justify-content: right;
         text-align: right;
