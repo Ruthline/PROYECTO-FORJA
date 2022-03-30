@@ -524,25 +524,29 @@ h1,h2,h3{
 .pacientes{
     text-align: center;
 }
+.tablapacientes{
+    margin-bottom: 30px;
+    border-collapse: separate;
+    border-spacing: 2px;
+    background: var(--blue-color);
+    color: #fff;
+    
+}
 .btable{
     width: 100%;
     display: flex;
     margin-bottom: 30px;
     justify-content: center;
 }
-table {
-    margin-bottom: 30px;
-    border-collapse: separate;
-    border-spacing: 2px;
-    background: var(--blue-color);
-    color: #fff;
- }
+
  tr, th {
     background: #fff;
     color: #000;
     height: 50px;
+    column-width:10px;
  }
- th{
+th{
+     
      background-color: #1D1B45;
      color: white;
  }
@@ -752,6 +756,10 @@ table {
     .bb{
         flex-direction: row;
     }
+    tr, th {
+        column-width: 300px;
+    }
+    
 }
 
 @media screen and  (min-width:1024px){
@@ -854,5 +862,5 @@ table {
     .bb{
         justify-content: space-around;
     }
-
+    
 }
