@@ -492,7 +492,8 @@ h1,h2,h3{
     padding: 20px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
 }
 .add{
     cursor: pointer;
@@ -609,7 +610,7 @@ table {
 }
 .formulariot1 h3{
     position: relative;
-    right: 20%;
+    right: 10%;
     color: white;
     
     font-weight: 100;
@@ -748,6 +749,9 @@ table {
     }
     .formulariot1 h3{
         right: 30%;
+    }
+    .bb{
+        flex-direction: row;
     }
 }
 
