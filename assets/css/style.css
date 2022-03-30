@@ -518,6 +518,7 @@ h1,h2,h3{
 }
 .inpa{
     border-radius: 5px;
+    width: 200px;
     padding: 5px;
     border: 2px solid var(--blue-color);
 }
@@ -543,7 +544,6 @@ h1,h2,h3{
     background: #fff;
     color: #000;
     height: 50px;
-    column-width:10px;
  }
 th{
      
@@ -755,9 +755,6 @@ th{
     }
     .bb{
         flex-direction: row;
-    }
-    tr, th {
-        column-width: 300px;
     }
     
 }
