@@ -496,7 +496,7 @@ h1,h2,h3{
     justify-content: space-evenly;
 }
 .add{
-    
+
     cursor: pointer;
     padding: 6px 10px;
     border-radius: 8px;
@@ -531,6 +531,7 @@ h1,h2,h3{
     justify-content: center;
 }
 table {
+    width: 100%;
     margin-bottom: 30px;
     border-collapse: separate;
     border-spacing: 2px;
@@ -611,7 +612,7 @@ table {
 }
 .formulariot1 h3{
     position: relative;
-    right: 10%;
+    right: 5%;
     color: white;
     
     font-weight: 100;
