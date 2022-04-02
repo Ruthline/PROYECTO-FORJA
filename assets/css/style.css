@@ -143,20 +143,21 @@ h1,h2,h3{
     height: 100%;
 }
 .fondoindex{
-    padding: 20px;
+    padding: 2rem;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     grid-area: fondoindex;
     background: rgba(255, 255, 255, 0.5) url(../img/4.\ covid.jpeg);
     background-blend-mode:lighten;
     justify-content: space-around;
-    background-repeat: no-repeat;
     background-size: cover;
 }
 .item8{
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    width: 80%;
 }
 .item8 h3{
     text-align: left;
@@ -164,9 +165,7 @@ h1,h2,h3{
 }
 .item8 ul{
     text-align: left;
-    padding-left:50px;
     list-style: none;
-    line-height:50px;
     
 }
 .item8 i{
@@ -179,8 +178,12 @@ h1,h2,h3{
     margin-right: 10px;
 }
 .item9{
-    padding: 10px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    justify-content: center;
+    overflow: hidden;
 }
 .item9 i{
     margin: 5px;
@@ -188,15 +191,12 @@ h1,h2,h3{
     color: var(--red-color);
 }
 .item9 h3{
-    text-align: justify;
     color: var(--blue-dark-color);
 }
-.item9 p,a{
-    text-align: justify;
-    margin: 10px;
+.item9 p{
+    width: 230px;
 }
 .item9 img{
-    justify-content: center;
     width: 200px;
 }
 .item10{
@@ -266,8 +266,8 @@ h1,h2,h3{
 }
 .inicio{
     position: relative;
-    left: 180px;
-    margin: 0.5px 0; 
+    left: 190px;
+    margin: 8px 0; 
     grid-area: inicio;
     width: 130px;
     border-radius: 8px;
@@ -527,17 +527,12 @@ h1,h2,h3{
 }
 .tablapacientes{
     margin-bottom: 30px;
-    border-collapse: separate;
     border-spacing: 2px;
-    margin-left: -50px;
     background: var(--blue-color);
     color: #fff;
-    border: 2px solid red;
-        font-size: 13px;
-        margin-right: -40px;
+    font-size: 13px;
 }
 .btable{
-
     width: 100%;
     display: flex;
     margin-bottom: 30px;
@@ -547,7 +542,6 @@ h1,h2,h3{
  tr, th {
     font-size: 10px;
     text-align: center;
-    column-width: 5px;
     background: #fff;
     color: #000;
     height: 50px;
@@ -558,21 +552,19 @@ th{
      color: white;
  }
  td{
-    padding: -30px;
     background-color:#1d1b453d;
  }
  .btndp2{
-     margin-right: 2px;
+    margin-right: 2px;
     cursor: pointer;
     border-radius: 5px;
     background-color:var(--blue-color);
-    color: var(--dark-color);
-    border: 2px solid var(--blue-color)
-    ;
+    color:#000;
+    border: 2px solid var(--blue-color);
     box-shadow: 1px 1px 1px var(--dark-color);
-    font-size: 0px;
-        width: 25px;
-        height: 25px;
+    font-size: 0.1px;
+    width: 25px;
+    height: 25px;
 }
 .btndp2 i{
     font-size: 10px;
@@ -586,7 +578,7 @@ th{
     background-color:var(--red-color);
     color: var(--white-color);
     border: 2px solid var(--red-color);
-    font-size: 0.5px;
+    font-size: 0.1px;
     width: 25px;
     height: 25px;
     box-shadow: 1px 1px 1px var(--dark-color);
@@ -752,7 +744,7 @@ th{
         width: 380px;
     }
     .inicio{
-        left: 240px;
+        left: 250px;
     }
     .headerpacientes{
         flex-direction: row;
@@ -768,6 +760,13 @@ th{
     .tablapacientes{
         width: 60%;
     }
+    tr, th{
+        font-size: 15px;
+    }
+    .btndp2, .btndp3{
+        font-size: 12px;
+        width: 85px;
+    }
     .formulario3{
         flex-direction: row;
     }
@@ -777,7 +776,15 @@ th{
     .bb{
         flex-direction: row;
     }
-    
+    .btndp2 i{
+        padding-left: 5px;
+    }
+    .btndp3 i{
+        padding-left: 5px;
+    }
+    .item9 p{
+        width: 400px;
+    }
 }
 
 @media screen and  (min-width:1024px){
@@ -827,6 +834,7 @@ th{
         flex-direction: row;
     }
     
+   
     #dashboard{
         display: grid;
         grid-template-areas: 
@@ -868,7 +876,7 @@ th{
     }
     
     .item9 p{
-        width: 600px;
+        width: 500px;
     }
     .carolina{
         left: 400px;
