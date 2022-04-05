@@ -108,8 +108,18 @@ h1,h2,h3{
 .item5 {
     grid-area:item5;
     text-align: center;
-    
+    animation: flash 2s ease 0.8ms 1 normal running;
 }
+
+@keyframes flash{
+    0%{
+        margin-left: 100%;
+    }
+    100%{
+        margin-left: 0%;
+    }
+}
+
 .item5 img{
     max-width: 390px;
     height: 100%;
@@ -247,10 +257,19 @@ h1,h2,h3{
     align-content: center;
     position: relative;
     top: 100px;
-    background-image: url(../img/10.png);
+    background: url(../img/10.png);
     grid-template-areas:
     "inicio"
     "lrectangle";
+    animation: animado 3s 1;
+}
+@keyframes animado {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 .lrectangle{
     border-radius: 10px;
@@ -287,6 +306,7 @@ h1,h2,h3{
     height: 180px;
     grid-area: cosa1;
 }
+
 .cosa1 p{
     position: relative;
     bottom: 20px;
@@ -440,6 +460,19 @@ h1,h2,h3{
     justify-content: center;
     opacity: 0.5;
     grid-area: guerrerosd;
+    animation: guerrero 3s ease 0.5ms 1 alternate running;
+}
+
+@keyframes guerrero {
+   0%{
+    opacity: 0.5;
+   }
+   50%{
+      opacity: 0.8;
+   }
+   100%{
+    opacity: 0.5;
+   }
 }
 .itembd{
     grid-area:itembd;
@@ -496,14 +529,28 @@ h1,h2,h3{
     justify-content: space-evenly;
 }
 .add{
-
     cursor: pointer;
     padding: 6px 10px;
     border-radius: 8px;
     color: white;
     background-color: var(--orange-color);
     border: 1px solid var(--orange-color);
+    animation: agregado 2s ease 0.5ms 2 normal running;
+}
 
+@keyframes agregado {
+    0%{
+       transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(20deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-20deg);
+    }
 }
 .add i{
     padding-left: 5px;
@@ -517,6 +564,7 @@ h1,h2,h3{
     border: 2px solid var(--blue-color);
 }
 .inpa{
+    margin: 1rem 0.3em;
     border-radius: 5px;
     width: 200px;
     padding: 5px;
@@ -599,6 +647,16 @@ th{
     color: white;
     text-align: center;
     font-size: 25px;
+    animation: div-add 2s ease-in 0.5ms 1 normal running;
+}
+
+@keyframes div-add {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 .tpacientesadd p{
     padding: 5px;
