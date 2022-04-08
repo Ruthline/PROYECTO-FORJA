@@ -135,7 +135,7 @@ h1,h2,h3{
 .bannerletras{
     position:relative;
     width: 250px;
-    left: 100px;
+    left: 50px;
     bottom: 210px;
 }
 .bannerletras h2{
@@ -164,13 +164,14 @@ h1,h2,h3{
     background-size: cover;
 }
 .item8{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 .item8 h3{
-    text-align: left;
+    text-align: center;
     color: var(--blue-dark-color);
 }
 .item8 ul{
@@ -203,11 +204,8 @@ h1,h2,h3{
 .item9 h3{
     color: var(--blue-dark-color);
 }
-.item9 p{
-    width: 230px;
-}
 .item9 img{
-    width: 200px;
+    width: 120px;
 }
 .item10{
     
@@ -841,7 +839,7 @@ th{
         padding-left: 5px;
     }
     .item9 p{
-        width: 400px;
+        width: 55%;
     }
 }
 
@@ -933,9 +931,6 @@ th{
         height: 40px;
     }
     
-    .item9 p{
-        width: 500px;
-    }
     .carolina{
         left: 400px;
     }
