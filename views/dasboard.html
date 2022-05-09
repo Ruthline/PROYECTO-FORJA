@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../assets/css/normalize.css">
+    <link rel="stylesheet" href="../assets/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://kit.fontawesome.com/78f25a04b2.js" crossorigin="anonymous"></script>
     <title>Dashboard</title>
 </head>
@@ -23,9 +24,11 @@
             </div>
             <div class="saludod">
                 <h1  >BIENVENIDOS</h1><br><br>
-                <input type="text" name="producto" placeholder="Digite el número del documento">
-                <button class="btnd"><i class="fa-solid fa-magnifying-glass"></i></button>
-                <button class="btnd"><i class="fa-solid fa-rotate-right"></i></button>
+                <form method="post" action="" id="searchDoc">
+                    <input type="text" id="documento" name="documento" placeholder="Digite el número del documento">
+                    <button type="submit" class="btnd"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button class="btnd"><i class="fa-solid fa-rotate-right"></i></button>
+                </form>
             </div>
             <div class="guerrerosd">
                 <img src="../assets/img/13. guerreros.png" alt="">
@@ -36,5 +39,7 @@
         <img src="../assets/img/12. franja.svg" class="bannerdimg">
     </div>
     
+
+    <script src="../assets/js/functions.js"></script>
 </body>
 </html>

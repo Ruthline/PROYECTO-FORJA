@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://kit.fontawesome.com/78f25a04b2.js" crossorigin="anonymous"></script>
     <title>Login forja</title>
 </head>
@@ -15,15 +15,17 @@
         <div class="cosa1">
             <img src="../assets/img/0. logoforja.png" alt=""><br><p>Contigo, siempre!</p>
         </div>
-        <div class="cosa3">
-            <label for="name">Usuario</label><br>
-            <input name="name" id="name" type="text" placeholder="" maxlength="10" autocomplete="on"required><br><br>
-            <label for="password">Contraseña</label> <br>
-            <input for="password" id="password" type="password" placeholder="" pattern="( ?=.* [ 0 - 9 ] ) ( ?=.* [ a - z ] ) ( ?=.* [ A - Z ] ) ( ?=.* [ *.!@ $% ^& ( ) { } [ ] :;<>,.?/~ _ +-=| \ ] ) . { 8 , 32 } $"><br><br>
+        <form method="post" action="" id="ingreso" class="cosa3">
+            <label for="usuario">Usuario</label><br>
+            <input type="text" name="usuario" id="usuario"  placeholder="" maxlength="10" autocomplete="on"required><br><br>
+            <label for="contrasena">Contraseña</label> <br>
+            <input type="password" name="contrasena" id="contrasena" ><br><br>
             <a href="">¿Olvidaste tu contraseña?</a><br><br>
-            <a href="./dasboard.html"><button class="ingresar">Ingresar</button></a>
+            <button type="submit" class="ingresar">Ingresar</button>
 
-        </div>
+        </form>
     </div>
+
+    <script src="../assets/js/functions.js"></script>
 </body>
 </html>
