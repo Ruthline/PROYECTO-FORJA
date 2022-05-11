@@ -15,7 +15,7 @@
         <a href="/index.html" class="logod"><img src="../assets/img/0. logoforja.png" alt=""></a><br>
         <a class="itemd1" href="./pacientes.html"><i class="fa-solid fa-users"></i><br>Pacientes</a><br>
         <a class="itemd2" href="cliente.html"><i class="fa-solid fa-syringe"></i><br>Vacunación</a><br>
-        <a class="itemd3" href="../index.html"><i class="fa-solid fa-power-off"></i><br>Cerrar sesión</a>
+        <a class="itemd3" href="../index.html" id="cerrar" type="click"><i class="fa-solid fa-power-off"></i><br>Cerrar sesión</a>
     </article>
     <article class="dcontenido">
             <div class="carolina">
@@ -25,7 +25,7 @@
             <div class="saludod">
                 <h1  >BIENVENIDOS</h1><br><br>
                 <form method="post" action="" id="searchDoc">
-                    <input type="text" id="documento" name="documento" placeholder="Digite el número del documento">
+                    <input type="number" id="documento" name="documento" placeholder="Digite el número del documento" required>
                     <button type="submit" class="btnd"><i class="fa-solid fa-magnifying-glass"></i></button>
                     <button class="btnd"><i class="fa-solid fa-rotate-right"></i></button>
                 </form>
@@ -40,6 +40,6 @@
     </div>
     
 
-    <script src="../assets/js/functions.js"></script>
+    <script src="../assets/js/dashboard.js"></script>
 </body>
 </html>
