@@ -25,7 +25,16 @@
         <div class="barrap">
             <img src="../assets/img/12. franja.svg" alt="">
         </div>
-   
+        <div class="contieneArriba">
+            <div class="titulo">
+              <p>Estado: Activo</p>
+              <h1>INFORMACION DEL PACIENTE</h1>
+            </div>
+            <div class="buttonsUp">
+              <button form="form_pacientes" class="guardar" id="guardar" class="btn-alert">Guardar cambios</button>
+                  <button id="closeForm" class="guardar">Cerrar</button>
+            </div>
+          </div>
         <div class="tpacientesadd">
             <p>NUEVA VACUNA</p>
         </div>
@@ -42,20 +51,36 @@
             <div class="form-datospaciente">
                 <div class="formulario2">
                     <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" required>
-                    <input type="number" id="documento" name="documento" placeholder="Numero de identificación" required>
+                    <div class="dT">
+                        <select name="tipo_documento" id="tipo_documento" required>
+                            <option value="" selected>Tipo documento</option>
+                            <option value="1">Cédula de ciudadanía</option>
+                            <option value="2">Tarjeta de identidad</option>
+                            <option value="3">Cédula de extranjeria</option>
+                            <option value="4">Pasaporte</option>
+                        </select>
+                        <input type="number" id="documento" name="documento" placeholder="Numero de identificación" required>
+                    </div>
+                   
                     <input type="date" id="date" name="date" min="2000-01-01" max="2022-01-01" required>
                 </div>
                 <div class="formulario2">
 
                     <input type="text" name="lastname" id="lastname" placeholder="Apellido" required>
-                    <select name="tipo_documento" id="tipo_documento" required>
-                        <option value="0" selected>Tipo de documento</option>
-                        <option value="1">Cédula de ciudadanía</option>
-                        <option value="2">Tarjeta de identidad</option>
-                        <option value="3">Cédula de extranjeria</option>
-                        <option value="4">Pasaporte</option>
-                    </select>
+                    
                     <input name="edad" id="edad" type="number" placeholder="Edad" required> 
+
+                    <select name="eps" id="eps" required>
+                        <option value="" selected>EPS</option>
+                        <option value="1">Convida</option>
+                        <option value="2">Famisanar</option>
+                        <option value="3">Compensar</option>
+                        <option value="4">Salud Colmena</option>
+                        <option value="5">Medimas</option>
+                        <option value="4">Sanitas</option>
+                        <option value="4">Saludcoop</option>
+                        <option value="4">Cruz Blanca</option>
+                    </select>
                 </div>
             </div>
         
@@ -66,129 +91,57 @@
             </div>
             <div class="form-datospaciente">
                 <div class="formulario2">
-                    <select name="ciudad" id="ciudad" required>
-                        <option value="0" selected>Departamento de residencia</option>
-                        <option value="1">Amazonas</option>
-                        <option value="2">Antioquia</option>
-                        <option value="3">Arauca</option>
-                        <option value="4">Atlántico</option>
-                        <option value="5">Bolívar</option>
-                        <option value="6">Boyacá</option>
-                        <option value="7">Caldas</option>
-                        <option value="8">Caquetá</option>
-                        <option value="9">Casanare</option>
-                        <option value="10">Cauca</option>
-                        <option value="11">Cesar</option>
-                        <option value="12">Chocó</option>
-                        <option value="13">Córdoba</option>
-                        <option value="14">Cundinamarca</option>
-                        <option value="15">Guanía</option>
-                        <option value="16">Guaviare</option>
-                        <option value="17">Huila</option>
-                        <option value="18">La Guajira</option>
-                        <option value="19">Magdalena</option>
-                        <option value="20">Meta</option>
-                        <option value="21">Nariño</option>
-                        <option value="22">Norte de Santander</option>
-                        <option value="23">Putumayo</option>
-                        <option value="24">Quindío</option>
-                        <option value="25">Risaralda</option>
-                        <option value="26">San Andrés y Providencia</option>
-                        <option value="27">Santander</option>
-                        <option value="28">Sucre</option>
-                        <option value="29">Tolima</option>
-                        <option value="30">Valle del Cauca</option>
-                        <option value="31">Vaupés</option>
-                        <option value="32">Vichada</option>
-                    </select>
-                    <input type="text" name="direccion" id="direccion" placeholder="Dirección" required>
-                    <input type="number" name="telefono" id="telefono" placeholder="Teléfono fijo" required>
+                   <select name="sede" id="sede" required>
+                       <option value="">Sede</option>
+                       <option value="1">Circunvalar</option>
+                       <option value="3">Corferias</option>
+                       <option value="4">Suba</option>
+                       <option value="4">Bosa</option>
+                       <option value="4">Chapinero Central</option>
+                       
+
+                   </select>
+                    <input type="text" name="idProfesional" id="idProfesional" placeholder="ID del profesional" required>
+
                 </div>
                 <div class="formulario2">
-                    <select name="ciudad" id="ciudad" required>
-                        <option value="0" selected>Municipio de residencia</option>
-                        <option value="1">Amazonas</option>
-                        <option value="2">Antioquia</option>
-                        <option value="3">Arauca</option>
-                        <option value="4">Atlántico</option>
-                        <option value="5">Bolívar</option>
-                        <option value="6">Boyacá</option>
-                        <option value="7">Caldas</option>
-                        <option value="8">Caquetá</option>
-                        <option value="9">Casanare</option>
-                        <option value="10">Cauca</option>
-                        <option value="11">Cesar</option>
-                        <option value="12">Chocó</option>
-                        <option value="13">Córdoba</option>
-                        <option value="14">Cundinamarca</option>
-                        <option value="15">Guanía</option>
-                        <option value="16">Guaviare</option>
-                        <option value="17">Huila</option>
-                        <option value="18">La Guajira</option>
-                        <option value="19">Magdalena</option>
-                        <option value="20">Meta</option>
-                        <option value="21">Nariño</option>
-                        <option value="22">Norte de Santander</option>
-                        <option value="23">Putumayo</option>
-                        <option value="24">Quindío</option>
-                        <option value="25">Risaralda</option>
-                        <option value="26">San Andrés y Providencia</option>
-                        <option value="27">Santander</option>
-                        <option value="28">Sucre</option>
-                        <option value="29">Tolima</option>
-                        <option value="30">Valle del Cauca</option>
-                        <option value="31">Vaupés</option>
-                        <option value="32">Vichada</option>
+                    <select name="profesional" id="profesional" required>
+                        <option value="">Profesional</option>
+                        <option value="1">Lina Sierra</option>
+                        <option value="2">Camila Cipagauta</option>
+                        <option value="3">Kiko Palomares</option>
+                        <option value="4">Peppa Pig</option>
                     </select>
-                    <input type="email" name="correo" id="correo" placeholder="Correo" required>
-                    <input type="number" name="celular" id="celular" placeholder="Celular" required>
+                    <select name="dosis" id="dosis" required>
+                        <option value="">Dosis</option>
+                        <option value="1">Primera dosis</option>
+                        <option value="2">Segunda dosis</option>
+                    </select>
                 </div>
-            </div>
-            
-            <div class="form-Estado">
-                <div class="formulariot1">
-                    <i class="fa-solid fa-heart-pulse"></i>
-                    <h3>ESTADO DE SALUD</h3>
-                </div>
-                <div class="formulario3">
-                    <select name="preexistencias" id="preexistencias" required>
-                        <option value="0" selected>Preexistencias</option>
-                        <option value="1">Enfermedad cardiovascular</option>
-                        <option value="2">Enfermedad respiratoria</option>
-                        <option value="3">En embarazo</option>
-                        <option value="5">Diabétes</option>
-                        <option value="4">Hipertensión</option>
-                        <option value="4">Ninguna</option>
-                    </select>
-                    <select name="discapacidad" id="discapacidad" required>
-                        <option value="0" selected>Discapacidad</option>
-                        <option value="1">Física</option>
-                        <option value="2">Auditiva</option>
-                        <option value="3">Visual</option>
-                        <option value="5">Sordoseguera</option>
-                        <option value="4">Múltiple</option>
-                        <option value="4">Ninguna</option>
-                    </select>
 
-                    <input type="text" name="alergias" placeholder="Alergias" required>
-                  </div>
+              
+            </div>
+            <div class="dosificacion">
+                <div class="formulario_3">
+                    <select name="biologico" id="biologico" required>
+                        <option value="">Biologico</option>
+                        <option value="1">Janssen</option>
+                        <option value="2">Moderna</option>
+                        <option value="3">Pfizer</option>
+                        <option value="4">Sinovac</option>
+                        <option value="5">Astrazeneca</option>
+                        <option value="6">Bharat Biotech</option>
+                    </select>
+                    <input type="date" id="dosisUno" name="dosisUno" required>
+                    <input type="date" id="dosisDos" name="dosisUno" required>  
+                </div>
+                
+                <div class="observ">
+                    <textarea name="textarea" rows="10" cols="50">Write something here</textarea>
+                </div>
                 
             </div>
-            <div class="ultimitoap">
-                <div class="checkpa">
-                    <p>¿El paciente se ha realizado la prueba covid con anterioridad y está ha salido positiva?</p>
-                    <input name="sicovidd" id="sicovidd"  type="radio">SI
-                    <input name="nocovidd" id="nocovidd" type="radio">NO
-                </div>
-                <div class="checkpa">
-                    <p>¿El paciente ha tenido contacto estrecho con una persona confirmada o sospechosa de tener COVID-19 en los últimos 14 días?</p>
-                    <input name="sicovid" id="sicovid"  type="radio">SI
-                    <input name="nocovid" id="nocovid" type="radio" >NO
-                </div>
-            </div>
-        </div>
-        <div class="savepa">
-            <button class="btn-guardarap" type="submit">Guardar</button>
+            
         </div>
     </form>
     
@@ -197,6 +150,6 @@
     </div>
 
 
-    <script src="../assets/js/pacientesadd.js"></script>
+    <script src="../assets/js/nuevaDosis.js"></script>
 </body>
 </html>

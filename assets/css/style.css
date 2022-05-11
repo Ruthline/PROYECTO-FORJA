@@ -532,6 +532,7 @@ h1,h2,h3{
     flex-direction: column-reverse;
     justify-content: space-evenly;
 }
+
 .add{
     cursor: pointer;
     padding: 6px 10px;
@@ -641,6 +642,29 @@ th{
     flex-direction: column;
     justify-content: center;
 }
+.contieneArriba{
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+}
+.buttonsUp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.buttonsUp button{
+    background-color: var(--orange-color);
+    padding: 5px;
+    border-style: none;
+    margin: 5px;
+    width: 150px;
+    border-radius: 5px;
+    font-weight: 300;
+    color: white;
+}
 .borde-contenedor{
     border: 1px solid var(--dark-color);
     margin: 15px 0;
@@ -686,6 +710,7 @@ th{
 }
 .formulariot1 i{
     font-size: 20px;
+    color: white;
     margin: 10px;
 }
 .formulariot1 h3{
@@ -707,8 +732,9 @@ th{
     padding-right: 20px;
     width: 100%;
     flex-direction: column;
+
 }
-.formulario2 input, select{
+.formulario2 input,.formulario2 select{
     padding: 8px;
     border-radius: 3px;
     border: 2px solid var(--blue-color);
@@ -716,22 +742,59 @@ th{
     width: 100%;
     margin: 10px;
 }
+
+.dT{
+    margin-left: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.dT select, .dT input{
+    margin: 9px 0;
+}
+
 .formulario2 select{
     padding: 8px;
     width: 100%;
 }
+.formulario2 label{
+    margin-left: 10px;
+}
 .formulario3{
     display: flex;
     flex-direction: column;
-    padding-right: 20px;
+    width: 100%;
 }
-.formulario3 input, select{
+.formulario3 input,.formulario3 select{
     border: 2px solid var(--blue-color);
     padding: 8px;
     height: 40px;
     margin: 10px;
+    
+}
+.formulario_3{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
     width: 100%;
 }
+.formulario_3 input,.formulario_3 select{
+    border: 2px solid var(--blue-color);
+    padding: 8px;
+    height: 40px;
+    margin: 10px;
+    
+}
+.observ{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+.observ textarea{
+    border-radius: 10px;
+    border: 2px solid var(--blue-color) ;
+}
+
 .checkpa{
     text-align: center;
 }
@@ -829,7 +892,7 @@ th{
         font-size: 12px;
         width: 85px;
     }
-    .formulario3{
+    .formulario3, .formulario_3{
         flex-direction: row;
     }
     .formulariot1 h3{
@@ -911,7 +974,10 @@ th{
     .form-datospaciente{
         flex-direction: row;
     }
-    .formulario3 input, select{
+    .formulario3 input,.formulario3 select{
+        width: 30%;
+    }
+    .formulario_3 input,.formulario_3 select{
         width: 30%;
     }
    
